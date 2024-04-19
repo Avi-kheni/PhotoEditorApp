@@ -55,6 +55,13 @@ case Transfer =  "CIPhotoEffectTransfer"
        }
 }
 
+enum BackgroundImageName : String, CaseIterable {
+    case flash  = "flashBg"
+    case happyHolidayBG  = "HappyHolidayBG"
+    case happyHolidayOverlay  = "HappyHolidayOverlay"
+    case yellowBg = "yellowBg"
+    
+}
 
 public func makeImageFrom(_ desiredView: UIView) -> UIImage {
     UIGraphicsBeginImageContextWithOptions(desiredView.bounds.size, false, 0.0)

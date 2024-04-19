@@ -93,11 +93,34 @@
                                     <constraint firstItem="beV-ce-HGg" firstAttribute="top" secondItem="mdW-4x-OAC" secondAttribute="top" id="yO0-L9-2QD"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6sP-Rt-MOz">
+                                <rect key="frame" x="0.0" y="119" width="393" height="426"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="M3c-8h-uae">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="426"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ix2-Q3-TA9">
+                                        <rect key="frame" x="78.666666666666671" y="42.666666666666657" width="235.66666666666663" height="340.66666666666674"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="ix2-Q3-TA9" firstAttribute="centerY" secondItem="M3c-8h-uae" secondAttribute="centerY" id="6oR-1X-I09"/>
+                                    <constraint firstItem="ix2-Q3-TA9" firstAttribute="centerX" secondItem="M3c-8h-uae" secondAttribute="centerX" id="VIz-he-rWh"/>
+                                    <constraint firstAttribute="bottom" secondItem="M3c-8h-uae" secondAttribute="bottom" id="X22-Ez-fsC"/>
+                                    <constraint firstItem="M3c-8h-uae" firstAttribute="leading" secondItem="6sP-Rt-MOz" secondAttribute="leading" id="XsJ-sF-WyJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="M3c-8h-uae" secondAttribute="trailing" id="fCu-Z4-DMV"/>
+                                    <constraint firstItem="ix2-Q3-TA9" firstAttribute="height" secondItem="M3c-8h-uae" secondAttribute="height" multiplier="0.8" id="rT4-1c-mQv"/>
+                                    <constraint firstItem="ix2-Q3-TA9" firstAttribute="width" secondItem="M3c-8h-uae" secondAttribute="width" multiplier="0.6" id="uPA-rw-O0w"/>
+                                    <constraint firstItem="M3c-8h-uae" firstAttribute="top" secondItem="6sP-Rt-MOz" secondAttribute="top" id="yF0-iB-7I8"/>
+                                </constraints>
+                            </view>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ZtI-8M-aue">
                                 <rect key="frame" x="20" y="772" width="353" height="32"/>
                                 <segments>
                                     <segment title="" image="camera.filters" catalog="system"/>
                                     <segment title="" image="pencil.and.scribble" catalog="system"/>
+                                    <segment title="" image="person.and.background.dotted" catalog="system"/>
                                 </segments>
                                 <color key="selectedSegmentTintColor" systemColor="systemYellowColor"/>
                                 <connections>
@@ -199,8 +222,11 @@
                             <constraint firstItem="zDA-i2-v9d" firstAttribute="centerX" secondItem="bmt-sk-ZnT" secondAttribute="centerX" id="5Fb-cQ-02Q"/>
                             <constraint firstItem="hHZ-C7-Whz" firstAttribute="trailing" secondItem="ZtI-8M-aue" secondAttribute="trailing" constant="20" id="BnX-kb-bzx"/>
                             <constraint firstItem="ZtI-8M-aue" firstAttribute="leading" secondItem="hHZ-C7-Whz" secondAttribute="leading" constant="20" id="D9p-cG-Szu"/>
+                            <constraint firstItem="6sP-Rt-MOz" firstAttribute="bottom" secondItem="mdW-4x-OAC" secondAttribute="bottom" id="Dd1-ct-gik"/>
                             <constraint firstItem="mdW-4x-OAC" firstAttribute="top" secondItem="QRv-z4-6qh" secondAttribute="bottom" constant="10" id="GTv-N0-E0q"/>
+                            <constraint firstItem="6sP-Rt-MOz" firstAttribute="leading" secondItem="mdW-4x-OAC" secondAttribute="leading" id="Gmc-kc-kgs"/>
                             <constraint firstItem="5sU-Wx-JZ3" firstAttribute="leading" secondItem="hHZ-C7-Whz" secondAttribute="leading" constant="10" id="IbM-q2-xMP"/>
+                            <constraint firstItem="6sP-Rt-MOz" firstAttribute="trailing" secondItem="mdW-4x-OAC" secondAttribute="trailing" id="Npx-JK-w6Y"/>
                             <constraint firstItem="mdW-4x-OAC" firstAttribute="leading" secondItem="hHZ-C7-Whz" secondAttribute="leading" id="OvF-Zw-hHb"/>
                             <constraint firstItem="hHZ-C7-Whz" firstAttribute="bottom" secondItem="ZtI-8M-aue" secondAttribute="bottom" constant="15" id="S4u-DR-AX5"/>
                             <constraint firstAttribute="trailing" secondItem="mdW-4x-OAC" secondAttribute="trailing" id="TKG-kL-Q0G"/>
@@ -208,12 +234,16 @@
                             <constraint firstItem="ZtI-8M-aue" firstAttribute="top" secondItem="5sU-Wx-JZ3" secondAttribute="bottom" constant="20" id="aTf-LX-wwW"/>
                             <constraint firstItem="ZtI-8M-aue" firstAttribute="top" secondItem="zDA-i2-v9d" secondAttribute="bottom" constant="20" id="aqz-jz-EbL"/>
                             <constraint firstItem="hHZ-C7-Whz" firstAttribute="trailing" secondItem="5sU-Wx-JZ3" secondAttribute="trailing" constant="10" id="eNO-7Q-kc5"/>
+                            <constraint firstItem="6sP-Rt-MOz" firstAttribute="top" secondItem="mdW-4x-OAC" secondAttribute="top" id="lzd-cK-h5K"/>
                             <constraint firstItem="hHZ-C7-Whz" firstAttribute="trailing" secondItem="U42-uV-SCp" secondAttribute="trailing" constant="20" id="qU8-H8-D3p"/>
                             <constraint firstItem="mdW-4x-OAC" firstAttribute="height" secondItem="bmt-sk-ZnT" secondAttribute="height" multiplier="0.5" id="xoI-sJ-48R"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="addTxtBtnOutlet" destination="zDA-i2-v9d" id="UrU-m0-uhJ"/>
+                        <outlet property="bgImgOutlet" destination="M3c-8h-uae" id="tMP-Cb-JxR"/>
+                        <outlet property="bgSubImgOutlet" destination="ix2-Q3-TA9" id="CFG-N3-nJu"/>
+                        <outlet property="bgViewOutlet" destination="6sP-Rt-MOz" id="abg-9n-Qil"/>
                         <outlet property="collectionViewOutlet" destination="5sU-Wx-JZ3" id="E0P-cn-uCT"/>
                         <outlet property="imageViewOutlet" destination="beV-ce-HGg" id="nhr-XM-phe"/>
                         <outlet property="viewOutlet" destination="mdW-4x-OAC" id="gfR-Qh-7nE"/>
@@ -221,20 +251,21 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v23-cv-e5s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1150" y="-62"/>
+            <point key="canvasLocation" x="1148.854961832061" y="-62.676056338028175"/>
         </scene>
     </scenes>
     <resources>
         <image name="camera.filters" catalog="system" width="128" height="119"/>
         <image name="face.smiling" catalog="system" width="128" height="123"/>
         <image name="pencil.and.scribble" catalog="system" width="128" height="86"/>
+        <image name="person.and.background.dotted" catalog="system" width="128" height="101"/>
         <image name="square.and.arrow.up" catalog="system" width="108" height="128"/>
         <image name="xmark.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
